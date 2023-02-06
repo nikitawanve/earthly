@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(227, 255, 227);
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    position: relative;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+    
+}
+header ul li a{
+    padding: 0.3rem 1.3rem;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 50px;
+    position: relative;
+    z-index: 1;
+    color: black;
+}
+header ul li a::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 20px;
+    background-color: rgb(141, 198, 255);
+    z-index: -1;
+    transition: 0.5s;
+}
+header ul li a:hover:after{
+    width: 100%;
+    
+}
+.Textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: rgb(0, 95, 0);
+    color: white;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.animated_text {
+    position: absolute;
+    top: 36%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    padding: 0 40px;
+    height: 60px;
+    overflow: hidden;
+    color: rgb(10, 87, 0);
+}
+
+.text {
+    
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 27px;
+    line-height: 60px;
+}
+
+.text:first-child {
+    animation: anim 12s infinite;
+}
+
+@keyframes anim {
+    0% {
+        margin-top: 0;
+    }
+
+    16% {
+        margin-top: -60px;
+    }
+
+    33% {
+        margin-top: -120px;
+    }
+
+    50% {
+        margin-top: -180px;
+    }
+
+    66% {
+        margin-top: -120px;
+    }
+
+    82% {
+        margin-top: -60px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Textbox{
+    position: relative;
+    max-width: 600px;
+}
+span{
+    color: rgb(0, 95, 0);
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.Textbox h2{
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.kit{
+    margin-left: 70px;
+}
